@@ -928,19 +928,20 @@
 // // fetch(url, {options})
 
 
-async function fetchData(){
-    try{
-        const pokemonName = document.getElementById("pokemonName").value.toLowerCase();
-        const image = document.getElementById("pokemonImg")
-        const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`)
-        if(!response.ok){
-            throw new Error("Couldnt fetch resource");
-        }
-        const data = await response.json();
-        image.src = data.sprites.front_default;
-        image.style.display= "block";
-    }
-    catch(error){
-        console.error(error);
-    }
-}
+// async function fetchData(){
+//     try{
+//         const pokemonName = document.getElementById("pokemonName").value.toLowerCase();
+//         const image = document.getElementById("pokemonImg")
+//         const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`)
+//         if(!response.ok){
+//             throw new Error("Couldnt fetch resource");
+//         }
+//         const data = await response.json();
+//         image.src = data.sprites.front_default;
+//         image.style.display= "block";
+//     }
+//     catch(error){
+//         console.error(error);
+//     }
+// }
+
